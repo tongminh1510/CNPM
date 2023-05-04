@@ -24,7 +24,7 @@ public class EmailActions {
 
 			MimeMessage message = emailSender.createMimeMessage();
 			MimeMessageHelper helper = new MimeMessageHelper(message, true);
-			helper.setFrom();//set from here 
+			helper.setFrom(sendarName);//set from here
 			helper.setTo(u.getUserEmail());
 			helper.setSubject(subject);
 			helper.setText(mailContent, true);
@@ -52,7 +52,7 @@ public class EmailActions {
 
 			MimeMessage message = emailSender.createMimeMessage();
 			MimeMessageHelper helper = new MimeMessageHelper(message, true);
-			helper.setFrom();
+			helper.setFrom(sendarName);
 			helper.setTo(u.getUserEmail());
 			helper.setSubject(subject);
 			helper.setText(mailContent, true);
@@ -82,7 +82,7 @@ public class EmailActions {
 
 			MimeMessage message = emailSender.createMimeMessage();
 			MimeMessageHelper helper = new MimeMessageHelper(message, true);
-			helper.setFrom();
+			helper.setFrom(sendarName);
 			helper.setTo(u.getUserEmail());
 			helper.setSubject(subject);
 			helper.setText(mailContent, true);

@@ -15,7 +15,7 @@
 	<name>BooksStore</name>
 	<description>Online books buying and selling System</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,7 +40,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.37</version>
+			<version>8.0.30</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -75,61 +75,6 @@
 
 
 
-			<!-- 		<div th:each="book : ${books} " class="mt-3">
-				<div class="alert alert-warning">
-					<div class="row">
-						<div class="col-sm-3">
-							<img style="width: 90%; height: 200px;"
-								th:src="@{'/image/webContent/BookCoverImages/'+${book.bookCover}}"
-								alt="Image not fount" />
-						</div>
-						<div class="col-sm-5">
-							<h5 class="" th:text="${book.bookTitle}"></h5>
-							<small th:text="${book.bookAuthor}"></small><br>
-							<small><b>Remaning Books : </b><span th:text="${book.bookQuantity}"></span></small>
-							<br>
-							
-							<small
-								class="text-small text-muted">Lorem ipsum dolor sit
-								amet, consectetur adipisicing elit. Aperiam id architecto
-								quibusdam.</small>
-								
-						</div>
-						<div class="col-sm-4">
-							<small>Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Dolores tempora!</small>
-							<div class="text-right bottom">
-								<button
-									th:attr="onclick=|viewOrderDitails('${ book.bookId }')|"
-									
-									class="btn btn-outline-info">Please wait..</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
-
-			<!-- 	 <div class="my-5">
-				<nav aria-label="Page navigation example ">
-					<ul class="pagination justify-content-end">
-						<li th:classappend="${ currentPage == 0 ?'disabled':'enabled' }"
-							class="page-item"><a class="page-link"
-							th:href="@{'/user/myBooks/'+${currentPage-1} }" tabindex="-1">Previous</a></li>
-						<li th:each="i : ${#numbers.sequence(1,totalPage)}"
-							class="page-item text-dark"><a class="page-link text-dark"
-							th:classappend="${ i==currentPage+1 }?'bg-dyellow' : ''"
-							th:href="@{'/user/myBooks/'+${i-1} }"><span
-								th:text="${i}"></span></a></li>
-						<li class="page-item"
-							th:classappend="${ currentPage+1 == totalPage } ?'disabled':'enabled' ">
-							<a class="page-link"
-							th:href="@{'/user/myBooks/'+${currentPage+1} }">Next</a>
-						</li>
-					</ul>
-				</nav>
-			</div>  -->
-
 		</div>
 
 		<script>

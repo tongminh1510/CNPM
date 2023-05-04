@@ -42,7 +42,7 @@ public class User {
 	private String userDistrict;
 	@NotBlank(message = "address field not be a blank!!")
 	@Size(max = 200, min = 5, message = "name must be greterthan 5 character or lessthan 30 character")
-	private String userAdd;
+	private String userAddr;
 	// @ColumnDefault(value = "default.png")
 	private String userPic;
 	@Column(length = 20)
